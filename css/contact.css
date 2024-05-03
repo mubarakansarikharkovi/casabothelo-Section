@@ -1,0 +1,143 @@
+/* _________Hero-banner-Section Start_______________ */
+.hero-banner {
+    background-image: url(../images/image\ -4445.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.hero-banner:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: 785px;
+    width: 90%;
+    text-align: center;
+    z-index: 999;
+}
+
+.hero-banner .main-heading {
+    margin-bottom: 24px;
+}
+
+.hero-banner .para {
+    text-align: center;
+    font-family: 'Museo Sans 500';
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.44px;
+}
+
+/* _________Hero-banner-Section End_______________ */
+/* _________Main-Section Start______________ */
+.main {
+    background-color: #262628;
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+.main__alpha {
+    width: 50%;
+    padding-right: 195px;
+}
+.main__text-svg-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main__text-svg-wrap.svg-wrap {
+    margin-bottom: 20px;
+}
+.main__text-svg-wrap.svg-wrap-2 {
+    margin-bottom: unset;
+}
+.main__chat-svg {
+    max-width: 22px;
+}
+.main__content {
+    margin-bottom: 24px;
+}
+.main__title {
+    margin-bottom: 24px;
+}
+.main__para {
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+}
+.main__text {
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-left: 15px;
+}
+span.main__email {
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    display: block;
+    margin-bottom: 24px;
+}
+.main__beta {
+    width: 50%;
+}
+/* _________Main-Section End_______________ */
+/* _________Form-Section Start_______________ */
+.form-section{
+    background-color: #262628;
+    padding: 60px 0 90px;
+}
+.form-section__content{
+    margin-bottom: 30px;
+    text-align: center;
+}
+span.input-type {
+    /* display: block; */
+    margin-bottom: 18px;
+    padding-right: 18px;
+}
+.form-section__text-wrap ::placeholder{
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 1.5; 
+letter-spacing: 0.32px;
+padding: 10px 15px;
+display: block;
+}
+input {
+    background: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    border: 1px solid #fff;
+}
+/* _________Form-Section End_______________ */

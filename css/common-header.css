@@ -1,0 +1,379 @@
+/* _________Header-Section Start_______________ */
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    padding: 26px 0;
+}
+.header__menu-list {
+    display: flex;
+    margin: 0 -18px;
+}
+.header__list-item {
+    margin: 0 18px;
+}
+.header:hover{
+    background-color: #262628;
+}
+.header__menu-link {
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+.mega-menu {
+    background-color: #262628;
+    padding: 50px 0 60px;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+.header .shop-item:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.mega-menu .drop-down {
+    display: flex;
+    align-items: center;
+}
+.mega-menu-alpha {
+    width: 76%;
+}
+.mega-menu__grid-wrap {
+    display: flex;
+    align-items: center;
+}
+.mega-menu-content-area{
+    display: flex;
+    align-items: center;
+}
+.mega-menu__menu-list {
+    padding-right: 30px;
+}
+.mega-menu__title {
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.mega-menu__menu-link {
+    color: #FFF;
+    font-family: 'Museo Sans 500';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+    cursor: pointer;
+}
+.mega-menu__menu-list :last-child .mega-menu__menu-link{
+    margin-bottom: 0;
+}
+.mega-menu__beta {
+    width: 24%;
+}
+.mega-menu__inner-image{
+    position: relative;
+}
+.mega-menu__image {
+    cursor: pointer;
+}
+.mega-menu__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.mega-menu__image-title{
+text-align: center;
+font-family: 'Museo Sans 500';
+font-size: 20px;
+font-weight: 600;
+line-height: 1.5; 
+letter-spacing: 1.44px;
+}
+.mega-menu__image-sub-title {
+    text-align: center;
+    font-family: 'Museo Sans 500';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+.header .collection-item:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.mega-menu__collecton-image-wrap {
+    max-width: 375px;
+    flex: 375px;
+    position: relative;
+}
+.mega-menu__text-position {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mega-menu__collection-image {
+    cursor: pointer;
+}
+.mega-menu__collection-content {
+    display: flex;
+    padding: 0 20px;
+}
+.mega-menu__collection-content :last-child{
+    padding-right: 0;
+}
+.mega-menu.explore {
+    padding: 50px 0;
+    right: 0;
+}
+.header__list-item-explore:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.mega-menu-explore__menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -50px;
+}
+.mega-menu-explore__menu-list .mega-menu__list-item {
+    border-right: 1px solid #fff;
+    padding: 0 50px;
+}
+.mega-menu-explore__menu-list .mega-menu__list-item:last-child{
+    border-right: unset;
+} 
+.mega-menu-explore__menu-list .mega-menu__menu-link{
+    margin-bottom: unset;
+}
+.header__compony-log {
+    max-width: 218px;
+    flex: 218px;
+}
+.header .search-svg {
+    margin: 0 35px 0 30px;
+}
+.header__inner_Svg-icon {
+    display: none;
+}
+.header .menu-icon {
+    max-width: 17px;
+    flex: 17px;
+    width: 100%;
+}
+.header .cross-icon {
+    position: absolute;
+    top: 26px;
+    max-width: 17px;
+    flex: 17px;
+    width: 100%;
+    display: none;
+}
+.header .cross-icon path {
+    stroke: #fff;
+    fill: #fff;
+}
+.header__drop-down {
+    width: 50%;
+    position: absolute;
+    top: 64px;
+    left: -100%;
+    background-color: #000000;
+    transition: 1s all ease-in-out;
+}
+.header__accordian {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    padding: 0 20px;
+}
+.header__accordian.active .accordian-menu-list {
+    display: block;
+}
+.accordian-menu-list{
+   display: none;
+}
+.header__accordian.active .header__accordian-minus-svg {
+    display: block;
+}
+.header__accordian.active .header__accordian-plus-svg {
+    display: none;
+}
+.header__accordian__item {
+    padding: 20px 0;
+}
+.header__accordian-svg-wrap {
+    position: relative;
+    max-width: 8px;
+    flex: 8px;
+}
+.header__accordian-plus-svg {
+    max-width: 8px;
+    flex: 8px;
+    width: 100%;
+}
+.header__accordian-minus-svg {
+    max-width: 8px;
+    flex: 8px;
+    min-width: 8px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.header__accordian-title {
+    font-family: 'Museo Sans 500';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+.accordian__list-item {
+    margin-bottom: 14px;
+}
+.accordian__menu-link {
+    font-family: 'Museo Sans 500';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.78px;
+    display: block;
+}
+/* _________Header-Section End_______________ */
+/* _________Media Query of Header-Section Start_______________ */
+@media screen and (max-width:1280px){
+    .mega-menu__menu-list {
+        padding-right: 20px;
+    }
+    .mega-menu__menu-link {
+        font-size: 14px;
+        letter-spacing: unset;
+    }
+    .mega-menu__image-title {
+        font-size: 18px;
+    }
+    .mega-menu__image-sub-title {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:991px) {
+    .header__menu-list {
+        margin: 0 -15px;
+    }
+    .header__list-item {
+        margin: 0 15px;
+    }
+    .header__menu-link {
+        font-size: 15px;
+        letter-spacing: 1.10px;
+    }
+    .header .search-svg {
+        margin: 0 30px 0 25px;
+    }
+    .mega-menu .drop-down {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mega-menu-alpha {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mega-menu__grid-wrap {
+        justify-content: space-between;
+    }
+    .mega-menu__menu-list {
+        padding-right: 30px;
+    }
+    .mega-menu__menu-list.inner-list {
+        padding-right: 0;
+    }
+    .mega-menu__menu-link {
+        font-size: 15px;
+    }
+    .mega-menu__beta {
+        width: 50%;
+    }
+    .mega-menu__image-title {
+        font-size: 20px;
+    }
+    .mega-menu__image-sub-title {
+        font-size: 18px;
+    }
+    .mega-menu.mega-collection .mega-menu__drop-down{
+        align-items: center;
+    }
+    .mega-menu.mega-collection .mega-menu__menu-list {
+        padding-right: 15px;
+    }
+    .mega-menu.mega-collection .mega-menu__menu-link {
+        font-size: 12px;
+    }
+    .mega-menu.mega-collection .mega-menu__image-title {
+        font-size: 17px;
+    }
+    .mega-menu.mega-collection .mega-menu__image-sub-title {
+        font-size: 16px;
+    }
+    .mega-menu-explore__menu-list {
+        margin: 0 -40px;
+    }
+    .mega-menu-explore__menu-list .mega-menu__list-item {
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width:767px) {
+    .header{
+        padding: 20px 0;
+    }
+    .header__inner_Svg-icon {
+        display: block;
+    }
+    .header__menu-list {
+        display: none;
+    }
+    .header__list-item-explore {
+        display: none;
+    }
+    .header__compony-log {
+        max-width: 168px;
+        flex: 168px;
+    }
+    .header .search-svg {
+        margin: 0 18px 0 18px;
+    }
+}
+@media screen and (max-width:560px) {
+    .header__drop-down {
+        width: 100%;
+    }
+}
+/* _________Media Query of Header-Section End_______________ */
